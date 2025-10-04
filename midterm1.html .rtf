@@ -1,0 +1,651 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html>\
+<head>\
+    <title>Vihaan Sheena Pardhe - Resume</title>\
+    <style>\
+        /* Font imports */\
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap');\
+        \
+        /* Color Palette Variables */\
+        :root \{\
+            --primary-color: #2c3e50;\
+            --secondary-color: #34495e;\
+            --accent-color: #3498db;\
+            --light-bg: #ecf0f1;\
+            --white: #ffffff;\
+            --text-dark: #2c3e50;\
+            --text-light: #7f8c8d;\
+            --border-color: #bdc3c7;\
+        \}\
+        \
+        /* Reset and Base Styles */\
+        * \{\
+            margin: 0;\
+            padding: 0;\
+            box-sizing: border-box;\
+        \}\
+        \
+        body \{\
+            font-family: 'Open Sans', sans-serif;\
+            margin: 0;\
+            padding: 0;\
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\
+            min-height: 100vh;\
+        \}\
+        \
+        /* Navigation Bar */\
+        nav \{\
+            background-color: var(--primary-color);\
+            padding: 15px 0;\
+            position: sticky;\
+            top: 0;\
+            z-index: 1000;\
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);\
+        \}\
+        \
+        nav ul \{\
+            list-style: none;\
+            display: flex;\
+            justify-content: center;\
+            gap: 30px;\
+            max-width: 900px;\
+            margin: 0 auto;\
+        \}\
+        \
+        nav li \{\
+            display: inline;\
+        \}\
+        \
+        nav a \{\
+            color: var(--white);\
+            text-decoration: none;\
+            font-family: 'Montserrat', sans-serif;\
+            font-weight: 600;\
+            font-size: 14px;\
+            text-transform: uppercase;\
+            letter-spacing: 1px;\
+            padding: 8px 15px;\
+            border-radius: 5px;\
+            transition: background-color 0.3s ease;\
+        \}\
+        \
+        nav a:hover \{\
+            background-color: var(--accent-color);\
+        \}\
+        \
+        /* Container for resume */\
+        .container \{\
+            max-width: 900px;\
+            margin: 30px auto;\
+            padding: 0 20px;\
+        \}\
+        \
+        /* Resume Card */\
+        .resume \{\
+            background: var(--white);\
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);\
+            border-radius: 10px;\
+            overflow: hidden;\
+        \}\
+        \
+        /* Header Section - ID Selector */\
+        #header \{\
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);\
+            padding: 50px 40px;\
+            position: relative;\
+            color: var(--white);\
+        \}\
+        \
+        #header::after \{\
+            content: '';\
+            position: absolute;\
+            bottom: 0;\
+            left: 0;\
+            right: 0;\
+            height: 5px;\
+            background: var(--accent-color);\
+        \}\
+        \
+        .profile \{\
+            display: flex;\
+            align-items: center;\
+            gap: 35px;\
+        \}\
+        \
+        /* Class Selector for profile picture */\
+        .profile-pic \{\
+            width: 160px;\
+            height: 160px;\
+            border-radius: 50%;\
+            background: var(--light-bg);\
+            border: 6px solid var(--white);\
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);\
+            object-fit: cover;\
+        \}\
+        \
+        /* Element Selector with Class */\
+        .name h1 \{\
+            font-family: 'Montserrat', sans-serif;\
+            font-size: 48px;\
+            margin: 0;\
+            font-weight: 700;\
+            letter-spacing: 3px;\
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);\
+        \}\
+        \
+        .name p \{\
+            font-family: 'Open Sans', sans-serif;\
+            font-size: 16px;\
+            color: var(--light-bg);\
+            text-transform: uppercase;\
+            letter-spacing: 3px;\
+            margin: 10px 0 0 0;\
+            font-weight: 300;\
+        \}\
+        \
+        /* Flexbox Layout for Main Content */\
+        .main-content \{\
+            display: flex;\
+        \}\
+        \
+        /* Left Column - Display Property */\
+        .left \{\
+            width: 35%;\
+            background: var(--light-bg);\
+            padding: 40px 30px;\
+            border-right: 2px solid var(--border-color);\
+        \}\
+        \
+        /* Right Column */\
+        .right \{\
+            width: 65%;\
+            padding: 40px;\
+            background: var(--white);\
+        \}\
+        \
+        /* Section Spacing */\
+        .section \{\
+            margin-bottom: 40px;\
+        \}\
+        \
+        /* Section Title Styling */\
+        .section-title \{\
+            font-family: 'Montserrat', sans-serif;\
+            font-size: 18px;\
+            font-weight: 700;\
+            text-transform: uppercase;\
+            letter-spacing: 2px;\
+            margin-bottom: 20px;\
+            padding-bottom: 10px;\
+            border-bottom: 3px solid var(--accent-color);\
+            color: var(--primary-color);\
+        \}\
+        \
+        /* Contact Items - Class Selector */\
+        .contact-item \{\
+            margin-bottom: 20px;\
+            font-size: 14px;\
+            color: var(--text-light);\
+            line-height: 1.6;\
+        \}\
+        \
+        .contact-item strong \{\
+            display: block;\
+            color: var(--text-dark);\
+            margin-bottom: 5px;\
+            font-weight: 600;\
+            font-family: 'Montserrat', sans-serif;\
+        \}\
+        \
+        /* Achievements List */\
+        .achievements-list \{\
+            list-style: none;\
+            padding: 0;\
+            margin: 0;\
+        \}\
+        \
+        .achievements-list li \{\
+            margin-bottom: 15px;\
+            padding-left: 25px;\
+            position: relative;\
+            font-size: 14px;\
+            color: var(--text-light);\
+            line-height: 1.5;\
+        \}\
+        \
+        /* Pseudo-element for bullet points */\
+        .achievements-list li::before \{\
+            content: "\uc0\u9656 ";\
+            position: absolute;\
+            left: 0;\
+            color: var(--accent-color);\
+            font-weight: bold;\
+            font-size: 18px;\
+        \}\
+        \
+        .achievements-list strong \{\
+            color: var(--text-dark);\
+            font-weight: 600;\
+        \}\
+        \
+        /* Language Progress Bars */\
+        .language \{\
+            margin-bottom: 18px;\
+        \}\
+        \
+        .language-name \{\
+            font-size: 14px;\
+            color: var(--text-dark);\
+            margin-bottom: 8px;\
+            font-weight: 600;\
+        \}\
+        \
+        /* Progress Bar Styling */\
+        .bar \{\
+            width: 100%;\
+            height: 10px;\
+            background: #d5dbdb;\
+            border-radius: 5px;\
+            overflow: hidden;\
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);\
+        \}\
+        \
+        .bar-fill \{\
+            height: 100%;\
+            background: linear-gradient(90deg, var(--accent-color), #5dade2);\
+            border-radius: 5px;\
+            transition: width 0.5s ease;\
+        \}\
+        \
+        /* Experience & Education Items */\
+        .item \{\
+            margin-bottom: 30px;\
+            padding: 20px;\
+            background: var(--light-bg);\
+            border-radius: 8px;\
+            border-left: 4px solid var(--accent-color);\
+            transition: transform 0.3s ease, box-shadow 0.3s ease;\
+        \}\
+        \
+        .item:hover \{\
+            transform: translateX(5px);\
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);\
+        \}\
+        \
+        /* Flexbox for Item Header */\
+        .item-header \{\
+            display: flex;\
+            justify-content: space-between;\
+            align-items: baseline;\
+            margin-bottom: 8px;\
+            flex-wrap: wrap;\
+        \}\
+        \
+        .item-title \{\
+            font-weight: 700;\
+            font-size: 15px;\
+            text-transform: uppercase;\
+            color: var(--primary-color);\
+            font-family: 'Montserrat', sans-serif;\
+            letter-spacing: 1px;\
+        \}\
+        \
+        .item-date \{\
+            font-size: 13px;\
+            color: var(--accent-color);\
+            font-weight: 600;\
+        \}\
+        \
+        .item-company \{\
+            font-weight: 600;\
+            color: var(--text-dark);\
+            margin-bottom: 8px;\
+            font-size: 14px;\
+        \}\
+        \
+        .item-description \{\
+            font-size: 14px;\
+            color: var(--text-light);\
+            line-height: 1.7;\
+        \}\
+        \
+        /* Skills Section - Display Flex */\
+        .skills \{\
+            display: flex;\
+            flex-wrap: wrap;\
+            gap: 20px;\
+            justify-content: space-between;\
+        \}\
+        \
+        .skill \{\
+            text-align: center;\
+            width: 100px;\
+        \}\
+        \
+        .skill-circle \{\
+            width: 100px;\
+            height: 100px;\
+            border-radius: 50%;\
+            border: 8px solid var(--accent-color);\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            margin-bottom: 10px;\
+            font-size: 22px;\
+            font-weight: bold;\
+            color: var(--primary-color);\
+            background: var(--white);\
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);\
+            transition: transform 0.3s ease, border-color 0.3s ease;\
+        \}\
+        \
+        .skill-circle:hover \{\
+            transform: scale(1.1);\
+            border-color: var(--primary-color);\
+        \}\
+        \
+        .skill-name \{\
+            font-size: 12px;\
+            color: var(--text-dark);\
+            text-transform: uppercase;\
+            font-weight: 600;\
+            letter-spacing: 1px;\
+        \}\
+        \
+        /* Responsive Design */\
+        @media (max-width: 768px) \{\
+            nav ul \{\
+                flex-direction: column;\
+                gap: 10px;\
+                align-items: center;\
+            \}\
+            \
+            .main-content \{\
+                flex-direction: column;\
+            \}\
+            \
+            .left, .right \{\
+                width: 100%;\
+            \}\
+            \
+            .left \{\
+                border-right: none;\
+                border-bottom: 2px solid var(--border-color);\
+            \}\
+            \
+            .profile \{\
+                flex-direction: column;\
+                text-align: center;\
+            \}\
+            \
+            .name h1 \{\
+                font-size: 36px;\
+            \}\
+            \
+            .skills \{\
+                justify-content: center;\
+            \}\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+<!-- Navigation Bar -->\
+<nav>\
+    <ul>\
+        <li><a href="#header">Home</a></li>\
+        <li><a href="#experience">Experience</a></li>\
+        <li><a href="#education">Education</a></li>\
+        <li><a href="#skills">Skills</a></li>\
+        <li><a href="#contact">Contact</a></li>\
+    </ul>\
+</nav>\
+\
+<div class="container">\
+<div class="resume">\
+    \
+    <!-- Header with ID Selector -->\
+    <div id="header">\
+        <div class="profile">\
+            <img src="https://uploads.onecompiler.io/43bafw23k/43ymh3enf/.jpg" class="profile-pic" alt="Profile">\
+            <div class="name">\
+                <h1>VIHAAN PARDHE</h1>\
+                <p>BBA DBE Student</p>\
+            </div>\
+        </div>\
+    </div>\
+    \
+    <div class="main-content">\
+        \
+        <!-- Left Column -->\
+        <div class="left">\
+            \
+            <div class="section" id="contact">\
+                <div class="section-title">Contact</div>\
+                <div class="contact-item">\
+                    <strong>Address</strong>\
+                    Mumbai, Maharashtra, IN\
+                </div>\
+                <div class="contact-item">\
+                    <strong>Phone</strong>\
+                    +91 [Your Number]\
+                </div>\
+                <div class="contact-item">\
+                    <strong>Email</strong>\
+                    your.email@gmail.com\
+                </div>\
+                <div class="contact-item">\
+                    <strong>LinkedIn</strong>\
+                    linkedin.com/in/yourname\
+                </div>\
+            </div>\
+            \
+            <div class="section">\
+                <div class="section-title">Achievements</div>\
+                <ul class="achievements-list">\
+                    <li><strong>Student Council Member</strong> - NIS (multiple times)</li>\
+                    <li><strong>Interact Club</strong> - Founding Member</li>\
+                    <li><strong>ACL</strong> - College Member</li>\
+                    <li><strong>DBE Pod Leader</strong> - Team Coordinator</li>\
+                </ul>\
+            </div>\
+            \
+            <div class="section">\
+                <div class="section-title">Languages</div>\
+                <div class="language">\
+                    <div class="language-name">English</div>\
+                    <div class="bar">\
+                        <div class="bar-fill" style="width: 95%;"></div>\
+                    </div>\
+                </div>\
+                <div class="language">\
+                    <div class="language-name">Hindi</div>\
+                    <div class="bar">\
+                        <div class="bar-fill" style="width: 90%;"></div>\
+                    </div>\
+                </div>\
+                <div class="language">\
+                    <div class="language-name">Marathi</div>\
+                    <div class="bar">\
+                        <div class="bar-fill" style="width: 75%;"></div>\
+                    </div>\
+                </div>\
+            </div>\
+            \
+        </div>\
+        \
+        <!-- Right Column -->\
+        <div class="right">\
+            \
+            <div class="section" id="experience">\
+                <div class="section-title">Work Experience</div>\
+                \
+                <div class="item">\
+                    <div class="item-header">\
+                        <div class="item-title">Anime Keychain Venture</div>\
+                        <div class="item-date">Jan 2025</div>\
+                    </div>\
+                    <div class="item-company">Self-Employed / College Campus</div>\
+                    <div class="item-description">\
+                        Executed micro-entrepreneurship project with \uc0\u8377 250 budget. Generated \u8377 390 revenue through strategic pre-sales and word-of-mouth marketing. Managed inventory, pricing, and customer relations within 30-minute operational window.\
+                    </div>\
+                </div>\
+                \
+                <div class="item">\
+                    <div class="item-header">\
+                        <div class="item-title">Relationship Advisor</div>\
+                        <div class="item-date">Apr 2025</div>\
+                    </div>\
+                    <div class="item-company">Freelance Service</div>\
+                    <div class="item-description">\
+                        Provided structured relationship advice sessions to peers. Managed scheduling, client interactions, and payment processing. Generated \uc0\u8377 400 revenue with zero investment through skill-based service model.\
+                    </div>\
+                </div>\
+                \
+            </div>\
+            \
+            <div class="section" id="education">\
+                <div class="section-title">Education</div>\
+                \
+                <div class="item">\
+                    <div class="item-header">\
+                        <div class="item-title">Bachelor of Business Administration</div>\
+                        <div class="item-date">2023 - Present</div>\
+                    </div>\
+                    <div class="item-company">NMIMS / IIMB</div>\
+                    <div class="item-description">\
+                        Specialization in Digital Business & Entrepreneurship. Coursework includes Business Process Management, Financial Analysis, Marketing Strategy, and Innovation Frameworks.\
+                    </div>\
+                </div>\
+                \
+                <div class="item">\
+                    <div class="item-header">\
+                        <div class="item-title">A Levels</div>\
+                        <div class="item-date">2021 - 2023</div>\
+                    </div>\
+                    <div class="item-company">Nahar International School</div>\
+                    <div class="item-description">\
+                        A Level qualifications with focus on Business Studies, Economics, and Mathematics.\
+                    </div>\
+                </div>\
+                \
+                <div class="item">\
+                    <div class="item-header">\
+                        <div class="item-title">IGCSE</div>\
+                        <div class="item-date">Till 2021</div>\
+                    </div>\
+                    <div class="item-company">Nahar International School</div>\
+                    <div class="item-description">\
+                        International General Certificate of Secondary Education with comprehensive academic foundation.\
+                    </div>\
+                </div>\
+                \
+                <div class="item">\
+                    <div class="item-header">\
+                        <div class="item-title">Primary Education</div>\
+                        <div class="item-date">Till Grade 3</div>\
+                    </div>\
+                    <div class="item-company">Bombay Scottish School</div>\
+                    <div class="item-description">\
+                        Foundation education in primary grades.\
+                    </div>\
+                </div>\
+                \
+            </div>\
+            \
+            <div class="section" id="skills">\
+                <div class="section-title">Skills</div>\
+                <div class="skills">\
+                    <div class="skill">\
+                        <div class="skill-circle">90%</div>\
+                        <div class="skill-name">Business</div>\
+                    </div>\
+                    <div class="skill">\
+                        <div class="skill-circle">85%</div>\
+                        <div class="skill-name">Marketing</div>\
+                    </div>\
+                    <div class="skill">\
+                        <div class="skill-circle">80%</div>\
+                        <div class="skill-name">Finance</div>\
+                    </div>\
+                    <div class="skill">\
+                        <div class="skill-circle">75%</div>\
+                        <div class="skill-name">Analysis</div>\
+                    </div>\
+                    <div class="skill">\
+                        <div class="skill-circle">85%</div>\
+                        <div class="skill-name">Communication</div>\
+                    </div>\
+                </div>\
+            </div>\
+            \
+        </div>\
+        \
+    </div>\
+    \
+</div>\
+</div>\
+\
+</body>\
+</html>    </div>\
+                    <div class="item-company">Nahar International School</div>\
+                    <div class="item-description">\
+                        International General Certificate of Secondary Education with comprehensive academic foundation.\
+                    </div>\
+                </div>\
+                \
+                <div class="item">\
+                    <div class="item-header">\
+                        <div class="item-title">Primary Education</div>\
+                        <div class="item-date">Till Grade 3</div>\
+                    </div>\
+                    <div class="item-company">Bombay Scottish School</div>\
+                    <div class="item-description">\
+                        Foundation education in primary grades.\
+                    </div>\
+                </div>\
+                \
+            </div>\
+            \
+            <div class="section">\
+                <div class="section-title">Skills</div>\
+                <div class="skills">\
+                    <div class="skill">\
+                        <div class="skill-circle">90%</div>\
+                        <div class="skill-name">Business</div>\
+                    </div>\
+                    <div class="skill">\
+                        <div class="skill-circle">85%</div>\
+                        <div class="skill-name">Marketing</div>\
+                    </div>\
+                    <div class="skill">\
+                        <div class="skill-circle">80%</div>\
+                        <div class="skill-name">Finance</div>\
+                    </div>\
+                    <div class="skill">\
+                        <div class="skill-circle">75%</div>\
+                        <div class="skill-name">Analysis</div>\
+                    </div>\
+                    <div class="skill">\
+                        <div class="skill-circle">85%</div>\
+                        <div class="skill-name">Communication</div>\
+                    </div>\
+                </div>\
+            </div>\
+            \
+        </div>\
+        \
+    </div>\
+    \
+</div>\
+\
+</body>\
+</html>\
+}
